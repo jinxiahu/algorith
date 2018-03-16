@@ -1,0 +1,31 @@
+//关于数据结构中一些该注意的 
+对于链表来说，一个链表包含节点和链表长度或者说容量，而节点则包括节点的值和指向下个节点的指针，因此创建链表的做法通常为 
+//节点类的创建  
+public class Node(){ 
+private int data; 
+private Node next; 
+public int getData(){ 
+return data; 
+} 
+public void setData(int data){ 
+this.data = data; 
+} 
+public Node getNext(){ 
+return next; 
+} 
+public void setNext(Node next){ 
+this.next = next; 
+} 
+} 
+//链表的创建 
+public class Link(){ 
+private Object element; 
+private Node next; 
+ public Node(){ 
+this(null,null); 
+} 
+public Node(Object ele, Node next){ 
+this.element = ele; 
+this.next = next; 
+} 
+ }
